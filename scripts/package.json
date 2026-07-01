@@ -6,7 +6,7 @@
   "scripts": {
     "deploy": "node deploy-contracts.js deploy",
     "deploy:mainnet": "node deploy-contracts.js deploy -n mainnet --yes",
-    "build": "node deploy-contracts.js build",
+    "build": "node init && node deploy-contracts.js build",
     "test": "bash test-contracts.sh",
     "test:mainnet": "bash test-contracts.sh -e .env.mainnet",
     "setup": "chmod +x *.sh",
